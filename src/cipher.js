@@ -1,22 +1,23 @@
 
 const cipher = {
-  function cifrar(text, offset){
-    if (!text)
-    {
-    return '';}
-    else{
-    let abc= 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    offset = (offset % 26 + 26) % 26;
-    return text.replace(/[A-Z]/ig, c => abc[(abc.indexOf(c) + offset)% 26]);}
-}
-function descifrar(text, offset){
-    if (!text)
-    return '';
-    let abc= 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    offset = (offset % 26 - 26) % 26;
-    return text.replace(/[A-Z]/ig, c => abc[(abc.indexOf(c) - offset)% 26]);
-}
+text : document.getElementById('msg').value,
+offset : document.getElementById('offset').value,
+abc: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+offset: (offset % 26 + 26) % 26,
+encode(text, offset){
+  if (!text)
+  {
+  return '';}
+  else{
+  return text.replace(/[a-zA-Z]/ig, c => abc[(abc.indexOf(c) + offset)% 26]);}
+},
+decode(text, offset){
+  if (!text)
+  return '';
+  return text.replace(/[a-zA-Z]/ig, c => abc[(abc.indexOf(c) - offset)% 26]);
+},
 };
 
-export default cipher;
 
+
+export default cipher;

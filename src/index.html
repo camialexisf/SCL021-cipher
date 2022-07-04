@@ -8,21 +8,22 @@
 
   </head>
   <header>
-    <h1> Cifrado Cesar</h1>
+    <h1> CIFRADO  CESAR </h1>
+    <p class="subtitle">*  <i>   mensajeria secreta   </i>  *</p>
   </header>
 
   <body>
     <main>
     <div id="input-text">
    <form id="cifrador" autocomplete="off">
-     <input type="number" id="offset" size="5" value="3" placeholder="Desplazamiento"/>
+     <input type="number" id="offset" size="5" value="3" placeholder="Desplazamiento"/><br>
        <input placeholder="Ingrese el texto" type="text" id="msg" spellcheck="false" name="text"/><br>
-       <button type="button" id="code">Cifrar</button>
-       <button type="button" id="decode">Descifrar</button>
+       <button type="button" id="code" class="button">Cifrar</button>
+       <button type="button" id="decode" class="button">Descifrar</button>
       </div>
       <div id="output-text">
       <input placeholder="Acá se mostrará el texto Codificado/Decodificado" type="text" id="decode-msg"/><br>
-      <button onclick='myFunction()'> Copiar </button>
+      <button id="copyText" class="button"> Copiar </button>
     </div>
   </main>
 
@@ -30,5 +31,6 @@
 
   </form>
   <script src="index.js" type="module"></script>
+  <script src="cipher.js" type="module"></script>
   </body>
 </html>
