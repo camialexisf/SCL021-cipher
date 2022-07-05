@@ -9,42 +9,42 @@ document.getElementById('copyText').addEventListener('click', function copy(){
 
 });
 
-let text = document.getElementById('msg').value;
-let offset = document.getElementById('offset').value;
 
-function inicio(){
+              /*TRANSFORMA LETRAS A MAYUS
+/*function inicio(){
     document.getElementById('msg').addEventListener('keyup', function(){
         this.value = this.value.toUpperCase();
-    }, true);     /*funcion que era utilizada para transformar letras a mayuscula
+    }, true);     
 
-    /* FUNCION Q HACE LINK AL BOTON QUE CODIFICA */
-document.getElementById('code').addEventListener('click', function(){
+      /* FUNCION Q HACE LINK AL BOTON QUE CODIFICA */
+/*document.getElementById('code').addEventListener('click', function(){
       let text = document.getElementById('msg').value;
       let offset = document.getElementById('offset').value;
     document.getElementById('decode-msg').value= cipher.encode;
      }, true);
 
-/*FUNCION QUE  HACE EL LINK A BOTON Q DECODIFICA */
- document.getElementById('decode').addEventListener('click', function(){
+       /*FUNCION QUE  HACE EL LINK A BOTON Q DECODIFICA */
+ /*document.getElementById('decode').addEventListener('click', function(){
     let text = document.getElementById('msg').value;
     let offset = document.getElementById('offset').value;
     document.getElementById('decode-msg').value = cipher.decode;
 }, true);
 };
-
+      /*FUNCION QUE CODIFICA
 /*function cifrar(text, offset){
     if (!text)
     {
     return '';}
     else{
-    let abc= 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let abc= 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     offset = (offset % 26 + 26) % 26;
     return text.replace(/[a-zA-Z]/ig, c => abc[(abc.indexOf(c) + offset)% 26]);}
 }
+            /*FUNCION QUE DECODIFICA
 function descifrar(text, offset){
     if (!text)
     return '';
-    let abc= 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let abc= 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     offset = (offset % 26 - 26) % 26;
     return text.replace(/[a-zA-Z]/ig, c => abc[(abc.indexOf(c) - offset)% 26]);
 }
