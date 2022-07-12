@@ -1,30 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+@import url('http://fonts.cdnfonts.com/css/ita');
+@import url('http://fonts.cdnfonts.com/css/cormorant-2');
+
 
 :root {
 
     /* FONTS */
-    --font-one: Sorts Mill Goudy;
-    --font-two: times;
+    --font-one: 'Cormorant Infant', sans-serif;
+    --font-two: 'Pitmanita', sans-serif;
+    --font-tres: 'Sree Krushnadevaraya', serif;
 
 
     /*  COLORS */
-    --background: #F9F6F0;
-    --border: #d4cdc9;
-    --input-color: #fdf9f3;
+    --background: #f4f1e1;
+    --border: #333538;
+    --input-color: #fef8ed;
 }
 
-|* {
-    font-family: var(--font-one);
+* {
+    font-family: 'Times New Roman', Times, serif;
+
 
 }
+
+/*html{
+    border: 7px solid var(--border);
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+
+}*/
 
 body {
     height: auto;
     justify-content: center;
     align-items: center;
     background-color: var(--background);
-    margin-top: 50px;
-    background-image: url('/img/05.jpg');
+    /* margin-top: 50px;*/
+    /*background-image: url('/img/05.jpg');*/
+    margin: none;
+    /*border: 5px solid var(--border);*/
+
 }
 
 input,
@@ -34,56 +51,68 @@ button {
 }
 
 main {
-    padding: 100px;
+    padding: 70px;
     display: flex;
     flex-direction: row;
     gap: 100px;
     justify-content: center;
     margin-top: 40px;
-    outline: 5px double var(--border);
-    outline: 5px double #bfb3ac;
-    outline-offset: 5px;
-
+    /*outline: 5px double var(--border);
+    outline-offset: 5px;*/
+    border-top: 5px double var(--border);
 }
 
 h1 {
     font-family: var(--font-one);
     text-transform: uppercase;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 70px;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 50px;
     margin: 15px 0px;
     text-align: center;
+    margin-top: 70px;
+    margin-inline: 5% 5%;
+    text-shadow: #e0e0e0 1px 1px 0;
 }
 
 .subtitle {
     text-align: center;
     font-family: var(--font-two);
-    font-size: 17px;
+    font-size: 15px;
+    margin-top: 30px;
+    font-weight: 550;
 }
 
 #msg,
 #decode-msg {
-    appearance: none;
+    /* appearance: none;*/
     margin: 10px;
     padding: 10px;
-    color: #023047;
+    color: var(--border);
     background-color: var(--input-color);
     opacity: 90%;
-    border-radius: 2px;
+    border-radius: 1px;
     width: 350px;
     height: 150px;
-    font-family: var(--font-two);
+    /*font-family: var(--font-two);*/
+    font-size: 15px;
+    /*border: 2px solid var(--border);*/
+    -webkit-box-shadow: 5px 5px 3px -2px rgba(0, 0, 0, 0.32);
+    box-shadow: 5px 5px 3px -2px rgba(0, 0, 0, 0.32);
 }
+
+
 
 #decode-msg {
     margin-top: 67px;
+
 }
 
 #offset {
+    /*border: 1px solid var(--border);*/
     background-color: var(--input-color);
     opacity: 90%;
-    font-family: var(--font-two);
+    /*font-family: var(--font-two);*/
     appearance: none;
     margin: 5px;
     padding: 20px;
@@ -91,18 +120,20 @@ h1 {
     font-weight: bold;
     width: 100px;
     height: 7px;
-    border-radius: 2px;
-    outline: #bfb5ae;
+    border-radius: 1px;
+    /*border:2px solid var(--border);*/
+    -webkit-box-shadow: 5px 5px 3px -2px rgba(0, 0, 0, 0.32);
+    box-shadow: 5px 5px 3px -2px rgba(0, 0, 0, 0.32);
 
 }
 
 .button {
-    background-color: #b49f93;
-    border: 1px solid #cec9c3;
+    background-color: var(--border);
+    border: 2px solid var(--border);
     border-radius: 2px;
     display: inline-block;
     cursor: pointer;
-    color: #ffffff;
+    color: var(--background);
     font-family: Arial;
     font-size: 12px;
     font-weight: bold;
@@ -113,11 +144,11 @@ h1 {
 }
 
 .button:hover {
-    background-color: #9f9790;
+    background-color: var(--background);
+    color: var(--border);
 }
 
 .button:active {
     position: relative;
     top: 1px;
 }
-

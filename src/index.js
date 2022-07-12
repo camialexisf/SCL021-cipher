@@ -1,7 +1,5 @@
 import cipher from './cipher.js';
 
-
-
 /* FUNCION Q HACE LINK AL BOTON QUE CODIFICA */
 document.getElementById('code').addEventListener('click', function () {
     let text = document.getElementById('msg').value;
