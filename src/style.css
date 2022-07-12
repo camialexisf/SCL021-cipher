@@ -11,9 +11,9 @@
 
 
     /*  COLORS */
-    --background: #f4f1e1;
-    --border: #333538;
-    --input-color: #fef8ed;
+    --background: #c8cac3;
+    --border: #383F42;
+    --input-color: #e4e5e7;
 }
 
 * {
@@ -37,19 +37,18 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var(--background);
-    /* margin-top: 50px;*/
     /*background-image: url('/img/05.jpg');*/
     margin: none;
     /*border: 5px solid var(--border);*/
 
 }
 
-input,
+/*input,
 button {
     border: none;
     outline: none;
 }
-
+*/
 main {
     padding: 70px;
     display: flex;
@@ -73,6 +72,7 @@ h1 {
     margin-top: 70px;
     margin-inline: 5% 5%;
     text-shadow: #e0e0e0 1px 1px 0;
+    color: #383F42;
 }
 
 .subtitle {
@@ -81,6 +81,7 @@ h1 {
     font-size: 15px;
     margin-top: 30px;
     font-weight: 550;
+    color: #383F42;
 }
 
 #msg,
@@ -140,12 +141,14 @@ h1 {
     padding: 6px 30px;
     text-decoration: none;
     margin-left: 30px;
+    box-shadow: #e0e0e0 1px 1px 0;
 
 }
 
 .button:hover {
     background-color: var(--background);
     color: var(--border);
+    box-shadow: var(--border) 1px 1px 0;
 }
 
 .button:active {
