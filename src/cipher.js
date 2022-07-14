@@ -1,17 +1,27 @@
-const cipher = {
+
+
+/*CODIGO QUE SIRVE BIEN HASTA EL MOMENTO*/
+/*const cipher = {
    encode: (text, offset) => {
-      let abc = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz';
-      offset = (offset % 27 + 27) % 27;
-      return text.replace(/[A-Za-zÑñ]/g, c => abc[(abc.indexOf(c) + offset) % 54]);
+      if(text,offset){
+         let abc = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+         offset = (offset % 26 + 26) % 26;
+         return text.replace(/[A-Za-z]/g, c => abc[(abc.indexOf(c) + offset) % 52]);}
+      else if (typeof (text) != 'string' || typeof (offset) != 'number') {
+         throw new TypeError('Wrong argument types');
+      }
+
 
    },
    decode: (text, offset) => {
-      let abc = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz';
-      offset = (offset % 27 + 27) % 27;
-      return text.replace(/[A-Za-zÑñ]/g, c => abc[(abc.indexOf(c) - offset) % 54]);
-   }
-}
-
+         if(text, offset){
+         let abc = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+         offset = (offset % 26 + 26) % 26;
+         return text.replace(/[A-Za-z]/g, c => abc[(abc.indexOf(c) - offset) % 52]);}
+         else if (typeof (text) != 'string' || typeof (offset) != 'number') {
+         throw new TypeError('Wrong argument types');
+      }
+}};*/
 
 
 

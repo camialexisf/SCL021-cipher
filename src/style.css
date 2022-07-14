@@ -11,9 +11,9 @@
 
 
     /*  COLORS */
-    --background: #c8cac3;
+    --background: #d5d6d2;
     --border: #383F42;
-    --input-color: #e4e5e7;
+    --input-color: #e7e9eb;
 }
 
 * {
@@ -22,33 +22,21 @@
 
 }
 
-/*html{
-    border: 7px solid var(--border);
-    position:fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-
-}*/
-
 body {
     height: auto;
     justify-content: center;
     align-items: center;
     background-color: var(--background);
-    /*background-image: url('/img/05.jpg');*/
     margin: none;
-    /*border: 5px solid var(--border);*/
 
 }
 
-/*input,
+input,
 button {
     border: none;
     outline: none;
 }
-*/
+
 main {
     padding: 70px;
     display: flex;
@@ -56,8 +44,6 @@ main {
     gap: 100px;
     justify-content: center;
     margin-top: 40px;
-    /*outline: 5px double var(--border);
-    outline-offset: 5px;*/
     border-top: 5px double var(--border);
 }
 
@@ -71,8 +57,8 @@ h1 {
     text-align: center;
     margin-top: 70px;
     margin-inline: 5% 5%;
-    text-shadow: #e0e0e0 1px 1px 0;
     color: #383F42;
+    text-shadow: 2px 2px 2px #ffffffa9;
 }
 
 .subtitle {
@@ -86,7 +72,6 @@ h1 {
 
 #msg,
 #decode-msg {
-    /* appearance: none;*/
     margin: 10px;
     padding: 10px;
     color: var(--border);
@@ -95,9 +80,7 @@ h1 {
     border-radius: 1px;
     width: 350px;
     height: 150px;
-    /*font-family: var(--font-two);*/
     font-size: 15px;
-    /*border: 2px solid var(--border);*/
     -webkit-box-shadow: 5px 5px 3px -2px rgba(0, 0, 0, 0.32);
     box-shadow: 5px 5px 3px -2px rgba(0, 0, 0, 0.32);
 }
@@ -110,10 +93,8 @@ h1 {
 }
 
 #offset {
-    /*border: 1px solid var(--border);*/
     background-color: var(--input-color);
     opacity: 90%;
-    /*font-family: var(--font-two);*/
     appearance: none;
     margin: 5px;
     padding: 20px;
@@ -122,7 +103,6 @@ h1 {
     width: 100px;
     height: 7px;
     border-radius: 1px;
-    /*border:2px solid var(--border);*/
     -webkit-box-shadow: 5px 5px 3px -2px rgba(0, 0, 0, 0.32);
     box-shadow: 5px 5px 3px -2px rgba(0, 0, 0, 0.32);
 
@@ -155,3 +135,12 @@ h1 {
     position: relative;
     top: 1px;
 }
+
+/*.caja {
+    width: 500px;
+    height: 100px;
+    overflow-y: scroll;*/
+    
+
+    
+
