@@ -1,7 +1,49 @@
-
-
-/*CODIGO QUE SIRVE BIEN HASTA EL MOMENTO*/
 /*const cipher = {
+   encode: (text, offset) => {
+var lowerCaseText = text.toLowerCase();
+var abc= 'abcdefghijklmnopqrstuvwxyz'.split('');
+var newText= '';
+for (var i=0; i< lowerCaseText.lenght; i++){
+   var letraInicial = lowerCaseText[i];
+   if(letraInicial === ''){
+      newText += letraInicial;
+      continue;
+   }
+   var currentIndex = abc.indexOf(letraInicial);
+   var newIndex = currentIndex + offset;
+   if(newIndex > 25)newIndex= newIndex - 26;
+   if (newIndex < 0) newIndex =newIndex + 26;
+   if (text[i] === text[i].toUppercase()){
+      newText += abc[newIndex].toUpperCase();
+   }
+   else newText + abc[newIndex]
+}
+return newText;
+   },
+   decode: (text, offset) => {
+      var lowerCaseText = text.toLowerCase();
+      var abc= 'abcdefghijklmnopqrstuvwxyz'.split('');
+      var newText= '';
+      for (var i=0; i< lowerCaseText.lenght; i++){
+         var letraInicial = lowerCaseText[i];
+         if(letraInicial === ''){
+            newText += letraInicial;
+            continue;
+         }
+         var currentIndex = abc.indexOf(letraInicial);
+         var newIndex = currentIndex + offset;
+         if(newIndex > 25)newIndex= newIndex + 26;
+         if (newIndex < 0) newIndex = newIndex - 26;
+         if (text[i] === text[i].toUppercase()){
+            newText += abc[newIndex].toUpperCase();
+         }
+         else newText + abc[newIndex]
+      }
+      return newText; }};*/
+
+
+
+const cipher = {
    encode: (text, offset) => {
       if(text,offset){
          let abc = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
@@ -21,7 +63,7 @@
          else if (typeof (text) != 'string' || typeof (offset) != 'number') {
          throw new TypeError('Wrong argument types');
       }
-}};*/
+}};
 
 
 

@@ -31,10 +31,10 @@ document.getElementById('copyText').addEventListener('click', function copy() {
 /*TRANSFORMA LETRAS A MAYUS*/
 
 
-document.getElementById('msg').addEventListener('keyup', function () {
+/*document.getElementById('msg').addEventListener('keyup', function () {
      this.value = this.value.toUpperCase();
-    }, true);
-//};
+    }, true);*/
+//
 
 /*FUNCION QUE CODIFICA
 /*function cifrar(text, offset){
