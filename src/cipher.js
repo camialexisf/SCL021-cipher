@@ -1,7 +1,7 @@
 
 
 /*CODIGO QUE SIRVE BIEN HASTA EL MOMENTO*/
-/*const cipher = {
+const cipher = {
    encode: (text, offset) => {
       if(text,offset){
          let abc = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
@@ -21,7 +21,7 @@
          else if (typeof (text) != 'string' || typeof (offset) != 'number') {
          throw new TypeError('Wrong argument types');
       }
-}};*/
+}};
 
 
 
