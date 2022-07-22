@@ -1,22 +1,22 @@
 import cipher from './cipher.js';
 
-/* FUNCION Q HACE LINK AL BOTON QUE CODIFICA */
+/* BOTON QUE CODIFICA */
 document.getElementById('code').addEventListener('click', function () {
     let text = document.getElementById('msg').value;
-    let offset = document.getElementById('offset').value;
-    document.getElementById('decode-msg').value = cipher.encode(text, offset);
+    let offset = (parseInt(document.getElementById('offset').value));
+    document.getElementById('decode-msg').value = cipher.encode(offset, text);
 }, true);
 
-/*FUNCION QUE  HACE EL LINK A BOTON Q DECODIFICA */
+/*BOTON QUE DECODIFICA */
 document.getElementById('decode').addEventListener('click', function () {
     let text = document.getElementById('msg').value;
-    let offset = document.getElementById('offset').value;
-    document.getElementById('decode-msg').value = cipher.decode(text, offset);
+    let offset = (parseInt(document.getElementById('offset').value));
+    document.getElementById('decode-msg').value = cipher.decode(offset, text);
 }, true);
 
 console.log(cipher);
 
-/* FUNCION DEL BOTON QUE COPIA*/
+/*BOTON QUE COPIA*/
 
 document.getElementById('copyText').addEventListener('click', function copy() {
     var copyText = document.getElementById('decode-msg');
@@ -31,10 +31,11 @@ document.getElementById('copyText').addEventListener('click', function copy() {
 /*TRANSFORMA LETRAS A MAYUS*/
 
 
-/*document.getElementById('msg').addEventListener('keyup', function () {
+document.getElementById('msg').addEventListener('keyup', function () {
      this.value = this.value.toUpperCase();
-    }, true);*/
+    }, true);
 //
+
 
 /*FUNCION QUE CODIFICA
 /*function cifrar(text, offset){
