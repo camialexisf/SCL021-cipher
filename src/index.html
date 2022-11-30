@@ -1,40 +1,64 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shorcut icon" href="img/laurel-wreath.png" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Caesar Cipher</title>
-  <link rel="stylesheet" href="style.css" />
+  <body>
+    <header>
+      <div id="titulo">
+        <h1>Cifrado Cesar</h1>
+        <br />
+        <img src="./img/path.png" id="imageBorder" />
+      </div>
+    </header>
+    <main>
+      <div id="input-text">
+        <form id="cifrador" autocomplete="off">
+          <section id="inputContainer">
+            <p id="inputDirection">Ingresa el desplazamiento</p>
+            <input
+              type="number"
+              id="offset"
+              size="5"
+              value="3"
+              placeholder="Offset"
+            /><br />
+          </section>
 
+          <textarea
+            placeholder="Ingresa el texto que deseas cifrar/descifrar"
+            type="text"
+            id="msg"
+            spellcheck="false"
+            name="text"
+          ></textarea
+          ><br />
+          <div id="buttonsContainer">
+            <button type="button" id="code" class="button">Cifrar</button>
+            <button type="button" id="decode" class="button">Descifrar</button>
+          </div>
+        </form>
+      </div>
+      <div id="output-text">
+        <form id="secondForm">
+          <textarea
+            placeholder="Acá se mostrará el texto cifrado/descifrado"
+            type="text"
+            id="decode-msg"
+            name="text"
+            readonly
+          ></textarea
+          ><br />
+          <button id="copyText" class="button">Copiar</button>
+        </form>
+      </div>
+    </main>
+    <footer>- LAB 021 - Camila Flores -</footer>
 
-</head>
-<header>
-  <h1> CIFRADO CESAR </h1>
-  <p class="subtitle">* <i> mensajeria secreta </i> *</p>
-</header>
-
-<body>
-  <main>
-    <div id="input-text">
-      <form id="cifrador" autocomplete="off">
-        <input type="number" id="offset" size="5" value="3" placeholder="Offset" /><br>
-        <input placeholder="Ingresa el texto que deseas cifrar/descifrar" type="text" id="msg" spellcheck="false"
-          name="text" /><br>
-        <button type="button" id="code" class="button">Cifrar</button>
-        <button type="button" id="decode" class="button">Descifrar</button>
-      </form>
-    </div>
-    <div id="output-text">
-      <form>
-      <input placeholder="Acá se mostrará el texto cifrado/descifrado" type="text" id="decode-msg" readonly /><br>
-      <button id="copyText" class="button"> Copiar </button>
-      </form>
-    </div>
-
-  </main>
-
-
-  <script src="index.js" type="module"></script>
-</body>
-
+    <script src="index.js" type="module"></script>
+  </body>
 </html>
