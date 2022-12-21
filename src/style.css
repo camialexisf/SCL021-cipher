@@ -5,9 +5,9 @@
   --font-one: "Orelega One", cursive;
 
   /*  COLORS */
-  --background: #faf5f2;
-  --border: #41ba7e;
-  --input-color: #faf5f2;
+  --background: #e8f3e1;
+  --border: #42ae78;
+  --input-color: #f9faee;
   --text-color: #3d3729;
 }
 
@@ -74,6 +74,7 @@ h1 {
   color: var(--border);
 }
 #imageBorder {
+  width: 100%;
   position: absolute;
   left: 0%;
 }
@@ -82,7 +83,7 @@ h1 {
   margin-top: 3%;
   outline: #41ba7e;
   color: var(--text-color);
-  background-color: var(--background);
+  background-color: var(--input-color);
   border-radius: 10px;
   width: 400px;
   height: 170px;
@@ -96,7 +97,7 @@ h1 {
   margin-top: 11.5%;
   outline: var(--border);
   color: var(--text-color);
-  background-color: var(--background);
+  background-color: var(--input-color);
   border-radius: 10px;
   width: 400px;
   height: 170px;
@@ -126,13 +127,12 @@ input::-webkit-inner-spin-button {
   border: 2px solid var(--border);
   border-radius: 7px;
   cursor: pointer;
-  color: var(--background);
+  color: var(--input-color);
   font-family: var(--font-one);
   font-size: 20px;
   font-weight: lighter;
   padding: 2% 10%;
   margin-top: 3%;
-  box-shadow: #e0e0e0 1px 1px 0;
 }
 #copyText {
   margin-top: 0px;
@@ -156,9 +156,29 @@ input::-webkit-inner-spin-button {
 }
 
 footer {
-  padding-top: 10%;
+  padding-top: 3%;
   text-align: center;
   font-size: 15px;
   font-family: var(--font-one);
   color: var(--border);
+}
+@media (max-width: 930px) {
+  main {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  #decode-msg,
+  #msg {
+    width: 60vw;
+    height: 15vh;
+    font-size: 20px;
+  }
+  #inputDirection,
+  #offset {
+    font-size: 20px;
+  }
 }
